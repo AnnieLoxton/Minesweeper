@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+/* Followed this tutorial for the game functionality:
+https://iq.opengenus.org/minesweeper-game-in-react-js/ */
+
+import React from 'react';
+import Board from './components/Board';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  return(
+    <div>
+      <h1 className="gameHeading">Minesweeper</h1>
+      <div className="gameBoard">   
+        <Board/>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
